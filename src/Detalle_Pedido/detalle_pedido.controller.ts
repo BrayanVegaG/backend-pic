@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Param, ParseIntPipe, Post, Put, Delete, NotFoundException } from '@nestjs/common';
-import { Detalle_PedidoService } from '../detalle_pedido/detalle_pedido.service';
+import { Detalle_PedidoService } from '../Detalle_Pedido/detalle_pedido.service';
 import { Detalle_Pedido } from '../detalle_pedido/detalle_pedido.entity';
 
 @Controller('detalle-pedido')
