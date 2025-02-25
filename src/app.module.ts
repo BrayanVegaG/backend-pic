@@ -17,7 +17,7 @@ import { Proveedor } from './proveedor/proveedor.entity';
 import { ReporteModule } from './reporte/reporte.module';
 import { UsuarioModule } from './usuario/usuario.module';
 import { UsuarioRolModule } from './Usuario_Rol/Usuario_Rol.module';
-import { Detalle_PedidoModule } from './Detalle_Pedido/detalle_pedido.module';
+import { Detalle_PedidoModule } from './detalle_pedido/detalle_pedido.module';
 import { ProveedorModule } from './proveedor/proveedor.module';
 import { parse } from 'path';
 
