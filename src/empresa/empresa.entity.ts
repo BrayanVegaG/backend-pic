@@ -13,7 +13,7 @@ export class Empresa {
   @Column()
   nombre: string;
 
-  @Column()
+  @Column({ nullable: true })
   ruc: number;
 
   @Column({ nullable: true })

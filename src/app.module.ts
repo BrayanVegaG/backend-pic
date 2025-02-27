@@ -19,21 +19,20 @@ import { UsuarioModule } from './usuario/usuario.module';
 import { UsuarioRolModule } from './Usuario_Rol/Usuario_Rol.module';
 import { Detalle_PedidoModule } from './detalle_pedido/detalle_pedido.module';
 import { ProveedorModule } from './proveedor/proveedor.module';
-import { parse } from 'path';
 
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DB_HOST,
-      port: parseInt(process.env.DB_PORT ?? '5433'),
-      username: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
-      entities: [__dirname + '//*.entity{.ts,.js}'],
+      host: 'localhost',
+      port: 5433,
+      username: 'postgres',
+      password: '123',
+      database: 'bd-pymes',
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
       autoLoadEntities: true,
-      synchronize: true,
+      synchronize: true,
     }),
     RolModule,
     AlertaStockModule,
